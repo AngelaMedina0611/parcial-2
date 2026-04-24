@@ -31,3 +31,10 @@ def inorden(nodo, resultado):
 
         for hijo in nodo.hijos[1:]:             # Recorre los demás hijos (derecha)
             inorden(hijo, resultado)
+            
+# Postorden: primero hijos -> luego raíz
+def postorden(nodo, resultado):
+    if nodo:
+        for hijo in nodo.hijos:                 # Recorre todos los hijos primero
+            postorden(hijo, resultado)
+        resultado.append(nodo.nombre)           # Al final guarda el nodo actual

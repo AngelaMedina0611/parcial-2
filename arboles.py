@@ -40,3 +40,10 @@ def postorden(nodo, resultado):
         resultado.append(nodo.nombre)           # Al final guarda el nodo actual
 # ---------------- CONSTRUCCIÓN DEL ÁRBOL ----------------
 raiz = Nodo("Disco C:")   # Nodo raíz del árbol
+
+# Nivel 2
+documentos = Nodo("Documentos")
+multimedia = Nodo("Multimedia")
+
+raiz.agregar_hijo(documentos)
+raiz.agregar_hijo(multimedia)

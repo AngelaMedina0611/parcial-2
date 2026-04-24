@@ -47,3 +47,15 @@ multimedia = Nodo("Multimedia")
 
 raiz.agregar_hijo(documentos)
 raiz.agregar_hijo(multimedia)
+
+# Nivel 3
+docs = Nodo("Documentos")
+trabajo = Nodo("Trabajo")
+fotos = Nodo("Fotos")
+musica = Nodo("Música")
+
+documentos.agregar_hijo(docs)
+documentos.agregar_hijo(trabajo)
+
+multimedia.agregar_hijo(fotos)
+multimedia.agregar_hijo(musica)

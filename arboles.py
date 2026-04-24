@@ -70,3 +70,21 @@ musica.agregar_hijo(Nodo("melodia.mp3"))
 # ---------------- MOSTRAR ESTRUCTURA ----------------
 print("Estructura:\n")
 raiz.mostrar()   # Imprime la jerarquía completa del árbol
+
+# ---------------- EJECUTAR RECORRIDOS ----------------
+pre = []
+ino = []
+post = []
+
+preorden(raiz, pre)
+inorden(raiz, ino)
+postorden(raiz, post)
+
+print("\nPreorden:")
+print(" -> ".join(pre))
+
+print("\nInorden:")
+print(" -> ".join(ino))
+
+print("\nPostorden:")
+print(" -> ".join(post))

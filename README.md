@@ -90,3 +90,8 @@ Este proyecto muestra cómo usar árboles para representar estructuras jerárqui
 Sistemas de archivos
 Organización de datos
 Estructuras tipo XML o JSON
+
+## AUTOR 
+- Angela medina
+- Kevin preciado
+- Gustavo valencia

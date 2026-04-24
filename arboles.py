@@ -66,3 +66,7 @@ trabajo.agregar_hijo(Nodo("informe.txt"))
 trabajo.agregar_hijo(Nodo("informe2.txt"))
 fotos.agregar_hijo(Nodo("vacaciones.png"))
 musica.agregar_hijo(Nodo("melodia.mp3"))
+
+# ---------------- MOSTRAR ESTRUCTURA ----------------
+print("Estructura:\n")
+raiz.mostrar()   # Imprime la jerarquía completa del árbol

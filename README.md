@@ -1,44 +1,50 @@
 # 🌳 Sistema de Árbol de Directorios en Python
-## 📌 Descripción
 
+## 📌 Descripción
 Este proyecto implementa una estructura de datos tipo árbol para simular un sistema de carpetas y archivos, similar al explorador de archivos de un sistema operativo.
 
-## Cada nodo representa:
+Cada nodo representa:
+- 📁 Una carpeta  
+- 📄 Un archivo  
 
-📁 Una carpeta
-📄 Un archivo
+Además, permite recorrer el árbol utilizando distintos métodos:
+- Preorden  
+- Inorden  
+- Postorden  
 
-Además, permite recorrer el árbol utilizando distintos métodos clásicos:
+---
 
-* Preorden
-* Inorden
-* Postorden
-* 🧱 Estructura del Código
-* 🔹 Clase Nodo
+## ⚠️ Problemática
+Una empresa guarda sus documentos en un sistema jerárquico de carpetas y archivos.
 
-Representa cada elemento del árbol.
+El administrador necesita:
+- Crear copias de seguridad de toda la estructura  
+- Realizar auditorías de forma rápida  
+- Ejecutar procesos de limpieza para eliminar archivos innecesarios  
 
-### Atributos:
+Para solucionar esto, se implementa una estructura de datos tipo árbol que permite organizar y recorrer eficientemente toda la información.
 
-nombre: Nombre del archivo o carpeta
-hijos: Lista de nodos hijos
+---
 
-## Métodos:
+## 🧱 Estructura del Código
 
-* agregar_hijo(hijo): Añade un nuevo nodo hijo
-* mostrar(nivel): Imprime la estructura jerárquica
-* 🔁 Recorridos Implementados
-* 📍 Preorden
-* Orden: Raíz → Hijos
-* Se usa para copiar o representar la estructura
-* 📍 Inorden
-* Orden: Hijo izquierdo → Raíz → Hijos derechos
-* Adaptado para árboles no binarios
-* 📍 Postorden
-* Orden: Hijos → Raíz
-* Útil para eliminar estructuras
+### 🔹 Nodos
+Los nodos representan cada elemento del sistema:
+- Carpetas  
+- Archivos  
+
+### 🔹 Conexiones
+Las conexiones indican la ubicación de cada elemento dentro de la jerarquía.
+
+### 🔹 Niveles del árbol
+- Nivel 1: Raíz (Disco C:)  
+- Nivel 2: Carpetas principales  
+- Nivel 3: Subcarpetas  
+- Nivel 4: Archivos (hojas)  
+
+---
+
 ## 🌲 Estructura del Árbol
-
 ```
 Disco C:
 ├── Documentos
@@ -54,49 +60,48 @@ Disco C:
         └── melodia.mp3
 ```
 
+---
+
+## 🔁 Recorridos
+
+### 📍 Preorden
+Raíz → Hijos  
+✔ Útil para copiar toda la estructura (backup)
+
+### 📍 Inorden
+Izquierda → Raíz → Derecha  
+✔ Útil para inspección ordenada (adaptado)
+
+### 📍 Postorden
+Hijos → Raíz  
+✔ Útil para eliminar archivos o limpiar estructura
+
+---
+
 ## ▶️ Ejecución
+```bash
+python arbol.py
+```
 
-* Guarda el archivo como:
-* arbol.py
-* Ejecuta en la terminal:
-* python arbol.py
-* 📤 Salida Esperada
-## 📌 Estructura
+---
 
-### Se imprime el árbol con niveles:
-
-Nivel 1: Disco C:
-   Nivel 2: Documentos
-   Nivel 2: Multimedia
-   ...
-## 📌 Recorridos
-
-#### Preorden:
-
-Disco C: -> Documentos -> Documentos -> apuntes.txt -> Trabajo -> informe.txt ...
-
-#### Inorden:
-
-apuntes.txt -> Documentos -> Documentos -> informe.txt ...
-
-#### Postorden:
-
-apuntes.txt -> Documentos -> informe.txt -> informe2.txt -> Trabajo ...
 ## ⚙️ Complejidad
 
-| Operación            | Complejidad |
-|---------------------|------------|
-| Recorridos          | O(n)       |
-| Inserción           | O(1)       |
-| Mostrar estructura  | O(n)       |
+| Operación  | Complejidad |
+|-----------|------------|
+| Recorridos | O(n) |
+| Inserción  | O(1) |
 
-Este proyecto muestra cómo usar árboles para representar estructuras jerárquicas, siendo útil en:
+---
 
-Sistemas de archivos
-Organización de datos
-Estructuras tipo XML o JSON
-
-## AUTOR 
+## 🎯 Conclusión
+El uso de árboles permite representar estructuras jerárquicas de forma clara y eficiente, facilitando procesos como:
+- Respaldo de información  
+- Auditorías  
+- Limpieza de archivos  
+## 👩‍💻 AUTOR 
 - Angela medina
 - Kevin preciado
 - Gustavo valencia
+
+Proyecto académico de estructuras de datos.

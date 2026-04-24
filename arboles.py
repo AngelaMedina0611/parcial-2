@@ -13,3 +13,10 @@ class Nodo:
         print("   " * (nivel - 1) + f"Nivel {nivel}: {self.nombre}")
         for hijo in self.hijos:
             hijo.mostrar(nivel + 1)   # Llamada recursiva para mostrar los hijos
+# ---------------- RECORRIDOS ----------------
+# Preorden: raíz -> hijos (izquierda a derecha)
+def preorden(nodo, resultado):
+    if nodo:
+        resultado.append(nodo.nombre)       # Primero se guarda el nodo actual
+        for hijo in nodo.hijos:             # Luego se recorren sus hijos
+            preorden(hijo, resultado)

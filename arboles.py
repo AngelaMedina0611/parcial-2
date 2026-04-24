@@ -38,3 +38,5 @@ def postorden(nodo, resultado):
         for hijo in nodo.hijos:                 # Recorre todos los hijos primero
             postorden(hijo, resultado)
         resultado.append(nodo.nombre)           # Al final guarda el nodo actual
+# ---------------- CONSTRUCCIÓN DEL ÁRBOL ----------------
+raiz = Nodo("Disco C:")   # Nodo raíz del árbol

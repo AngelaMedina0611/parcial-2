@@ -20,3 +20,14 @@ def preorden(nodo, resultado):
         resultado.append(nodo.nombre)       # Primero se guarda el nodo actual
         for hijo in nodo.hijos:             # Luego se recorren sus hijos
             preorden(hijo, resultado)
+            
+# Inorden: hijo izquierdo -> raíz -> hijos derechos
+def inorden(nodo, resultado):
+    if nodo:
+        if len(nodo.hijos) > 0:
+            inorden(nodo.hijos[0], resultado)   # Recorre el primer hijo (izquierda)
+
+        resultado.append(nodo.nombre)           # Luego guarda el nodo actual
+
+        for hijo in nodo.hijos[1:]:             # Recorre los demás hijos (derecha)
+            inorden(hijo, resultado)

@@ -59,3 +59,10 @@ documentos.agregar_hijo(trabajo)
 
 multimedia.agregar_hijo(fotos)
 multimedia.agregar_hijo(musica)
+
+# Nivel 4 (archivos como hojas)
+docs.agregar_hijo(Nodo("apuntes.txt"))
+trabajo.agregar_hijo(Nodo("informe.txt"))
+trabajo.agregar_hijo(Nodo("informe2.txt"))
+fotos.agregar_hijo(Nodo("vacaciones.png"))
+musica.agregar_hijo(Nodo("melodia.mp3"))

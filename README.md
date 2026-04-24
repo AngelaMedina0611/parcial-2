@@ -38,6 +38,8 @@ hijos: Lista de nodos hijos
 * Orden: Hijos → Raíz
 * Útil para eliminar estructuras
 ## 🌲 Estructura del Árbol
+
+```
 Disco C:
 ├── Documentos
 │   ├── Documentos
@@ -50,7 +52,10 @@ Disco C:
     │   └── vacaciones.png
     └── Música
         └── melodia.mp3
+```
+
 ## ▶️ Ejecución
+
 * Guarda el archivo como:
 * arbol.py
 * Ejecuta en la terminal:
